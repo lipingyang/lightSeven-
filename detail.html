@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>detail</title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<style>
+			.mui-slider {
+				height: 250px;
+				width: 100%;
+			}
+			
+			h3 {
+				font-size: 16px;
+				color: #747479;
+				margin: 20px 0 20px 0;
+			}
+			
+			.now {
+				font-size: 16px;
+				color: #747479;
+				font-weight: bold;
+			}
+			
+			.old {
+				text-decoration: line-through
+			}
+			
+			.threespan {
+				display: inline-block;
+				width: 32%;
+				margin-top: 10px;
+				text-align: center;
+				line-height: 10px;
+				float: left;
+			}
+			
+			.mui-table-view {
+				height: 40px;
+				line-height: 40px;
+			}
+			
+			.mui-table-view p {
+				padding-left: 20px;
+				font-size: 17px;
+				color: #000;
+			}
+			.mui-segmented-control{
+				border-radius: 5px;
+			}
+			.mui-segmented-control .mui-control-item {
+				line-height: 25px;				
+			}
+			.mui-control-content{
+				padding: 10px;
+			}
+			.mui-control-content h4{
+				color: #6d6d72;
+				margin-bottom: 20px;
+			}
+			.mui-control-content p{
+				line-height: 25px;
+				font-size: 16px;
+				color: #6d6d72;
+			}
+			.mui-control-content >img{
+				height: 300px;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			#item3 ul{
+				width: 100%;
+				margin: 0 auto;
+				background-color: #fff;
+			}
+			#item3 ul li{
+				height:80px;
+				list-style: none;
+			}
+			#item3 ul li .pic{
+				width: 80px;
+				height: 80px;
+				float: left;
+			}
+			#item3 ul li .pic img{
+				display: block;
+				margin: 10px 0 0 10px;
+			}
+			#item3 ul li .commend{
+                padding-top: 10px;
+				width: calc(100% - 80px);
+				float: right;
+				border-bottom: 1px solid #e7e7e7;
+			}
+			#item3 ul li .commend p{
+				overflow: auto;
+			}
+			#item3 ul li .commend span{
+				display: inline-block;
+				margin-right: 5px;
+			}
+			#item3 ul li .commend .commend-txt{
+				font-size: 14px;
+				margin-top: -10px;
+			}
+		</style>
+	</head>
+
+	<body style="overflow: auto;">
+		<header class="mui-bar mui-bar-nav">
+			<a class="span-right">
+				<span class="mui-icon mui-icon-arrowleft" style="padding-left: 0;"></span>
+				<span class="about">Back</span>
+			</a>
+			<h1 class="mui-title">Details</h1>
+		</header>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/detailTHREE.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/detailONE.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/detailTwo.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/detailTHREE.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/detailONE.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<div class="txt">
+			<h3>DreamHome Square Poly Pillow Insert</h3>
+			<p>
+				<span class="now">$88</span>
+				<span class="old">$288</span>
+			</p>
+			<div class="threespan">
+				<p>"18*18"</p>
+				<p>square</p>
+				<p>pillow insert</p>
+			</div>
+			<div class="threespan">
+				<p>100% pillowester</p>
+			</div>
+			<div class="threespan">
+				<p>washable</p>
+			</div>
+		</div>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell">
+				<a class="mui-navigate-right">
+					<p>Choose Size and Color</p>
+				</a>
+			</li>
+		</ul>
+
+		<!--选项卡-->
+		<div class="mui-content">
+			<div style="padding: 10px 10px;">
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item2">
+						Details
+					</a>
+					<a class="mui-control-item" href="#item3">
+						Commends(120)
+					</a>
+				</div>
+			</div>
+			<div>
+				<div id="item2" class="mui-control-content mui-active">
+					<h4>真正适合裸睡的面料</h4>
+					<p>只有当你接触到床的那一刻，才会被前所未有的柔软打动。天丝般的爽滑质感，完美的设计，漂亮的色彩搭配。</p>
+					<img src="img/detailTHREE.jpg" />
+					<h4>活性色彩，我的正能量</h4>
+					<p>活性印刷，生活不在一成不变，跟上时代的脚步。A版大花纹，古典大气，民族的就是最美。零压力的舒适感，让人完美享受美好的床上时光。</p>
+					<img src="img/detailFour.jpg" />
+				</div>
+				<div id="item3" class="mui-control-content">
+					<ul>
+						<li>
+							<div class="pic">
+								<img src="img/pic.jpg" width="60px" height="60px"/>
+							</div>
+							<div class="commend">
+								<p>
+									<span class="fl">张三</span>
+									<span class="fr">13:13</span>
+									<span class="fr">12/12</span>
+								</p>
+								<p class="commend-txt">聚划算买的，只要888，料子很舒服。</p>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<img src="img/pic.jpg" width="60px" height="60px"/>
+							</div>
+							<div class="commend">
+								<p>
+									<span class="fl">张三</span>
+									<span class="fr">13:13</span>
+									<span class="fr">12/12</span>
+								</p>
+								<p class="commend-txt">聚划算买的，只要888，料子很舒服。</p>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<img src="img/pic.jpg" width="60px" height="60px"/>
+							</div>
+							<div class="commend">
+								<p>
+									<span class="fl">张三</span>
+									<span class="fr">13:13</span>
+									<span class="fr">12/12</span>
+								</p>
+								<p class="commend-txt">聚划算买的，只要888，料子很舒服。</p>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<img src="img/pic.jpg" width="60px" height="60px"/>
+							</div>
+							<div class="commend">
+								<p>
+									<span class="fl">张三</span>
+									<span class="fr">13:13</span>
+									<span class="fr">12/12</span>
+								</p>
+								<p class="commend-txt">聚划算买的，只要888，料子很舒服。</p>
+							</div>
+						</li>
+						<li>
+							<div class="pic">
+								<img src="img/pic.jpg" width="60px" height="60px"/>
+							</div>
+							<div class="commend">
+								<p>
+									<span class="fl">张三</span>
+									<span class="fr">13:13</span>
+									<span class="fr">12/12</span>
+								</p>
+								<p class="commend-txt">聚划算买的，只要888，料子很舒服。</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui("#slider").slider({
+			interval: 3000
+		});
+		$(".span-right").bind("tap",function(){
+			history.back()
+		})
+	</script>
+
+</html>

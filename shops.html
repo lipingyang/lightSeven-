@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>shops</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/icons-extra.css" />
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css"/>-->
+		<style>
+			.mui-table-view-cell {
+				height: 100px;
+			}
+			
+			.mui-table-view-cell img {
+				height: 70px;
+				width: 70px;
+				display: inline-block;
+				margin: 15px 0 0 15px;
+				float: left;
+			}
+			
+			.mui-media-body {
+				height: 70px;
+				margin-top: 15px;
+			}
+			
+			.pone {
+				font-size: 16px;
+				color: #505457;
+			}
+			
+			.mui-media-body span {
+				display: inline-block;
+				margin-left: 10px;
+			}
+			
+			.ptwo {
+				color: #abadae;
+				margin-left: 10px;
+			}
+			
+			.pthree {
+				color: #9699a0;
+				margin-left: 10px;
+			}
+			.mui-table-view{
+				padding-bottom: 60px;
+				margin-top:30px;
+			}
+			.mui-slider{
+				height: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/mao.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/cbd.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="img/mao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="img/cbd.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<ul class="mui-table-view mui-table-view-chevron">
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img src="img/shopOne.png">
+					<div class="mui-media-body">
+						<p class="pone">
+							<span>SoundAsleep Products</span>
+							<span>$120</span>
+						</p>
+						<p class="ptwo">203 Likes</p>
+						<p class="pthree">SoundAsleep Dream Series Air Mattress with ComfortCoil Technology</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img src="img/shopOne.png">
+					<div class="mui-media-body">
+						<p class="pone">
+							<span>SoundAsleep Products</span>
+							<span>$120</span>
+						</p>
+						<p class="ptwo">203 Likes</p>
+						<p class="pthree">SoundAsleep Dream Series Air Mattress with ComfortCoil Technology</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img src="img/shopTwo.png">
+					<div class="mui-media-body">
+						<p class="pone">
+							<span>SoundAsleep Products</span>
+							<span>$120</span>
+						</p>
+						<p class="ptwo">203 Likes</p>
+						<p class="pthree">SoundAsleep Dream Series Air Mattress with ComfortCoil Technology</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img src="img/shopOne.png">
+					<div class="mui-media-body">
+						<p class="pone">
+							<span>SoundAsleep Products</span>
+							<span>$120</span>
+						</p>
+						<p class="ptwo">203 Likes</p>
+						<p class="pthree">SoundAsleep Dream Series Air Mattress with ComfortCoil Technology</p>
+					</div>
+				</a>
+			</li>
+			<li class="mui-table-view-cell mui-media">
+				<a class="mui-navigate-right">
+					<img src="img/shopTwo.png">
+					<div class="mui-media-body">
+						<p class="pone">
+							<span>SoundAsleep Products</span>
+							<span>$120</span>
+						</p>
+						<p class="ptwo">203 Likes</p>
+						<p class="pthree">SoundAsleep Dream Series Air Mattress with ComfortCoil Technology</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item  item-card">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">Home</span>
+			</a>
+			<a class="mui-tab-item item-shops mui-active">
+				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+				<span class="mui-tab-label">Shops</span>
+			</a>
+			<a class="mui-tab-item item-me">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">Me</span>
+			</a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		mui("#slider").slider({
+			interval: 3000
+		});
+		$(".item-card").bind("tap", function() {
+			window.location.href = "card.html"
+		})
+		$(".item-shops").bind("tap", function() {
+			window.location.href = "shops.html"
+		})
+		$(".item-me").bind("tap", function() {
+			window.location.href = "me.html"
+		})
+		$(".mui-table-view-cell").bind("tap", function() {
+			window.location.href = "detail.html"
+		})
+	</script>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>me</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/icons-extra.css" />
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<style>
+			.title {
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			.mui-table-view-cell{
+				height: 40px;
+			}
+			.mui-table-view-cell img{
+				display: inline-block;
+				margin:10px 0 0 20px;
+				width: 20px;
+				height: 20px;
+				float: left;
+			}
+			.mui-table-view-cell span{
+				display: inline-block;
+				margin-left: 20px;
+				color: #3d4145;	
+				font-size: 16px;
+				line-height: 40px;	
+			}
+			.head-pic{
+				width: 100%;
+				height: 100px;
+				margin: 50px auto 10px;
+				border-top:1px solid #e7e7e7;
+				border-bottom:1px solid #e7e7e7;
+			}
+			.head-img{
+				width: 85px;
+				height: 85px;
+				border-radius: 85px;
+				overflow: hidden;
+				text-align: center;
+				margin: 7.5px 0 0 20px;
+				float: left;
+			}
+			.head-img img{
+				width: 100%;
+				height: 100%;
+			}
+			.head-introduce{
+				float: left;
+				margin-left: 20px;
+				padding-top: 5px;
+			}
+			.head-introduce p{
+				margin-top: 5px;
+				margin-bottom: 0;
+				color: #3d4145;
+			}
+			.head-introduce p span{
+				font-weight: bold;
+				display: inline-block;
+				margin-right: 5px;
+			}
+			.four-box{
+				width: 100%;
+				border-top: 1px solid #cccccc;
+				border-bottom: 1px solid #cccccc;
+				height: 80px;
+				margin-bottom:30px;
+				background-color: #fff;
+				padding: 0px;
+			}
+			.four-box >div{
+				width: calc(25% - 1px);
+				height: 79px;
+				float: left;
+				list-style: none;
+				text-align: center;
+				border-right: 1px solid #cccccc;
+			}
+			.four-box span{
+				display: block;
+				margin-top: 10px;
+			}
+			.number{
+				color: #3d4145;font-weight: bold;
+			}
+			.leibie{
+				color: #b29999;
+				font-size: 14px;
+			}
+			.red-btn{
+				width: calc(100% - 40px);
+				color: #fff;
+				height: 50px;
+				margin: 40px auto 0;
+				text-align: center;
+				line-height: 50px;
+				font-weight: bold;
+				background-color: #f6383a;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">Settings</h1>
+		</header>
+		<div class="head-pic">
+			<div class="head-img">
+				<img src="img/angieWang.png" />
+			</div>
+			<div class="head-introduce">
+				<p>Mr Potato</p>
+				<p>Time is money</p>
+				<p><span>528</span>Follow</p>
+			</div>
+		</div>
+		<div class="four-box">
+			<div>
+				<span class="number">12</span>
+				<span class="leibie">in Cart</span>
+			</div>
+			<div>
+				<span class="number">5</span>
+				<span class="leibie">Sent</span>
+			</div>
+			<div>
+				<span class="number">2</span>
+				<span class="leibie">Delivery</span>
+			</div>
+			<div style="border: none;">
+				<span class="number">85</span>
+				<span class="leibie">Comments</span>
+			</div>
+		</div>
+		<div class="mui-content">			
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img src="img/account.png">
+                        <span>Account</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class='mui-navigate-right' href="javascript:;">
+						<img src="img/me.png">
+                        <span>Me</span>                          
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img src="img/noti.png">
+                        <span>Noti</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img  src="img/fav.png">
+                        <span>Fav</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right">
+						<img src="img/help.png">
+                        <span>Help</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+        <div class="red-btn">
+        	Logout
+        </div>
+        <nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item item-card">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">Home</span>
+				</a>
+				<a class="mui-tab-item item-shops">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+					<span class="mui-tab-label">Shops</span>
+				</a>
+				<a class="mui-tab-item  mui-active item-me" href="me.html">
+					<span class="mui-icon mui-icon-contact"></span>
+					<span class="mui-tab-label">Me</span>
+				</a>
+		</nav>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		$(".red-btn").click(function(){
+			window.location.href = "index.html"
+		});
+	   $(".item-card").bind("tap", function() {
+			window.location.href = "card.html"
+		})
+		$(".item-shops").bind("tap", function() {
+			window.location.href = "shops.html"
+		})
+		$(".item-me").bind("tap", function() {
+			window.location.href = "me.html"
+		})
+	</script>
+</html>

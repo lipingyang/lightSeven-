@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Card</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="css/icons-extra.css" />
+		<style>
+			li {
+				list-style: none;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.span-right {
+				display: inline-block;
+				float: right;
+			}
+			
+			.marLeft-5 {
+				padding-left: 5px;
+			}
+			
+			.mui-content {
+				overflow: auto;
+			}
+			
+			.title {
+				line-height: 90px;
+				color: #bbb;
+				padding-left: 20px;
+			}
+			
+			.black-white {
+				background-color: #1c1d1f;
+				color: #bbb;
+				width: calc(100% - 40px);
+				margin: 0 auto;
+				height: 40px;
+				padding: 5px 30px 5px 10px;
+				line-height: 30px;
+			}
+			
+			.mui-switch .mui-active {
+				background-color: #000;
+			}
+			.white{
+				width: 100%;
+				padding: 0 20px 0 20px;
+				height: 100%;
+				background-color:#fff;
+				bottom: 0;
+				position: fixed;z-index: 100000;
+				display: none;
+				animation:height10 300ms;
+			}
+			@keyframes height10{
+				from{height: 0;}
+				to{height: 100%;}
+			}
+			.white .title{
+				text-align: center;
+				color: #6d6d72;
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 50px;
+				margin-top: 30px;
+			}
+			.white .introduce{
+				text-align: left;
+				font-size: 16px;
+				line-height: 30px;
+			}
+			.blue-box{
+				width: 100%;
+				height: 20px;
+				border: 1px solid #0894ec;
+				color: #0894ec;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 5px;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--侧滑菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<div class="title">Themes</div>
+						<div class="black-white">
+							<span>Night Mode</span>
+							<div class="mui-switch mui-switch-mini fr">
+								<div class="mui-switch-handle"></div>
+							</div>
+						</div>
+					</div>
+			</aside>
+			<!--主界面部分-->
+			<div class="mui-inner-wrap">
+				<header class="mui-bar mui-bar-nav">
+					<a id="icon-gear" href="#offCanvasSide"><span class="mui-icon mui-icon-gear"></span></a>
+					<a class="span-right">
+						<span class="about">About</span>
+						<span class="mui-icon mui-icon-bars marLeft-5"></span>
+					</a>
+					<h1 class="mui-title">Light7 Mall</h1>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll" style="overflow: auto;padding: 40px 0 45px 0;">
+						<div class="mui-card">
+							<div class="mui-card-header mui-card-media">
+								<img src="img/cbd.jpg" width="100%" height="100%" />
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<p style="color: #333;">DreamHome Square Poly Pillow Insert</p>
+									<p>@January 18, 2016</p>
+								</div>
+							</div>
+							<div class="mui-card-footer">
+								<span class="mui-card-link">Like(120)</span>
+								<span class="mui-card-link">Comment(20)</span>
+							</div>
+						</div>
+						<div class="mui-card">
+							<div class="mui-card-header mui-card-media">
+								<img src="img/yuantiao.jpg" width="100%" height="100%" />
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<p style="color: #333;">DreamHome Square Poly Pillow Insert</p>
+									<p>@January 18, 2016</p>
+								</div>
+							</div>
+							<div class="mui-card-footer">
+								<span class="mui-card-link">Like(120)</span>
+								<span class="mui-card-link">Comment(20)</span>
+							</div>
+						</div>
+						<div class="mui-card">
+							<div class="mui-card-header mui-card-media">
+								<img src="img/cbd.jpg" width="100%" height="100%" />
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<p style="color: #333;">DreamHome Square Poly Pillow Insert</p>
+									<p>@January 18, 2016</p>
+								</div>
+							</div>
+							<div class="mui-card-footer">
+								<span class="mui-card-link">Like(120)</span>
+								<span class="mui-card-link">Comment(20)</span>
+							</div>
+						</div>
+						<div class="mui-card">
+							<div class="mui-card-header mui-card-media">
+								<img src="img/cbd.jpg" width="100%" height="100%" />
+							</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									<p style="color: #333;">DreamHome Square Poly Pillow Insert</p>
+									<p>@January 18, 2016</p>
+								</div>
+							</div>
+							<div class="mui-card-footer">
+								<span class="mui-card-link">Like(120)</span>
+								<span class="mui-card-link">Comment(20)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active item-card">
+					<span class="mui-icon mui-icon-home"></span>
+					<span class="mui-tab-label">Home</span>
+				</a>
+				<a class="mui-tab-item item-shops">
+					<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+					<span class="mui-tab-label">Shops</span>
+				</a>
+				<a class="mui-tab-item item-me">
+					<span class="mui-icon mui-icon-contact"></span>
+					<span class="mui-tab-label">Me</span>
+				</a>
+			</nav>
+			
+	</div>
+	<div class="white">
+		<p class="title">About light7 mall</p>
+		<p class="introduce">It's a demo webapp of Light7.</p>
+		<div class="blue-box">OK</div>
+	</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/card.js"></script>
+	<script>
+		$(".item-card").bind("tap", function() {
+			window.location.href = "card.html"
+		})
+		$(".item-shops").bind("tap", function() {
+			window.location.href = "shops.html"
+		})
+		$(".item-me").bind("tap", function() {
+			window.location.href = "me.html"
+		});
+		$(".mui-card").bind("tap", function() {
+			window.location.href = "detail.html"
+		});
+		
+		$(".span-right").bind("tap",function(){
+//			$(".mui-off-canvas-wrap").fadeOut("50000");
+			$(".white").show();
+		})
+		$(".blue-box").bind("tap",function(){
+//			$(".mui-off-canvas-wrap").fadeIn("5000");
+			$(".white").hide();
+		})
+	</script>
+
+</html>
